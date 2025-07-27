@@ -86,6 +86,23 @@ python dashboard.py
 
 This will start a local web server, generate the `result.html` file, and automatically open the dashboard in your default web browser.
 
+## Output CSV Structure (`scopus_publications.csv`)
+
+The scraper generates and updates a CSV file named `scopus_publications.csv`, which serves as the database for the dashboard. The structure of this file is designed to track FWCI values over time.
+
+-   **`Publication Name`**: The title of the publication.
+-   **`URL`**: The direct Scopus link to the publication's page.
+-   **`FWCI (DD/MM/YY)`**: A column representing the FWCI value on a specific date. Each time the scraper runs, it adds a new column with the current date if it doesn't already exist for that day, or updates the values if it does. This allows for historical tracking.
+
+### Example:
+
+```csv
+Publication Name,URL,FWCI (20/07/24),FWCI (27/07/24)
+"A study on advanced AI models","https://scopus.com/record/display.uri?eid=2-s2.0-12345",1.52,1.58
+"The impact of climate change on marine life","https://scopus.com/record/display.uri?eid=2-s2.0-67890",2.10,2.10
+"New methods in quantum computing","https://scopus.com/record/display.uri?eid=2-s2.0-11223",Not found,3.45
+```
+
 ## Project Structure
 
 -   `scopus_scraper.py`: The main script for scraping data from Scopus.

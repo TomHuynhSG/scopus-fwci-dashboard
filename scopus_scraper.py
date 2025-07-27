@@ -18,8 +18,8 @@ HOME_URL = 'https://www.scopus.com'
 BASE_DOMAIN_URL = 'https://www.scopus.com'
 LOGIN_CONFIRMATION_ELEMENT_ID = 'user-menu'
 SIGN_IN_BUTTON_ID = 'signin_link_move'
-COOKIES_FILE = 'scopus_cookies.json'
-LOCAL_STORAGE_FILE = 'scopus_local_storage.json'
+COOKIES_FILE = 'cookies_local_storage/scopus_cookies.json'
+LOCAL_STORAGE_FILE = 'cookies_local_storage/scopus_local_storage.json'
 CSV_OUTPUT_FILE = 'scopus_publications.csv'
 
 # (The save_session and load_session functions are unchanged, so they are included here for completeness)

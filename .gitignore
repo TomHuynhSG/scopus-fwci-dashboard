@@ -10,6 +10,9 @@ pip-selfcheck.json
 
 # Project-specific files
 *.csv
-result.html
-*.json
 chrome_profile/
+result_html/
+cookies_local_storage/
+
+.DS_Store
+*.log
