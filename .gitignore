@@ -16,3 +16,6 @@ cookies_local_storage/
 
 .DS_Store
 *.log
+
+# VS Code
+.vscode/
