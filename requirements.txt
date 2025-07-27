@@ -1,0 +1,4 @@
+pandas
+Flask
+selenium
+webdriver-manager
